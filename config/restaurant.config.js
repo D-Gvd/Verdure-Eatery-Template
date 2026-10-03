@@ -82,7 +82,7 @@ const restaurant = {
     /** Eyebrow text above the restaurant name */
     eyebrow: "Est. 2026 · Pacita Avenue",
     /** Main headline — can be different from restaurant.name */
-    headline: "Good food,\ngrown close.",
+    headline: "Good food,\ngood vibes.",
     /** Subheading shown below the headline */
     subheading:
       "Serving the best, mouthwatering flavored chicken wings in the south!",
