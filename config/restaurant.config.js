@@ -60,11 +60,11 @@ const restaurant = {
     description:
       "Verdure is a neighbourhood eatery serving seasonal, ingredient-driven cooking. Find us at 42 Elm Street. Open Tuesday through Sunday.",
     /** Absolute URL where your site will live */
-    siteUrl: "https://verdure.example.com",
+    siteUrl: "https://verdure-demo.vercel.app",
     /** Absolute URL to the Open Graph share image (1200×630px recommended) */
     ogImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80",
     /** Your Google Search Console verification code (or remove the key) */
-    googleVerification: "",
+    googleVerification: "q7iYaySCvrg8nWa6mu6oHSadfXncbMp0GY_qedzCCFg",
   },
 
   // ── 5. Navigation ──────────────────────────────────────────

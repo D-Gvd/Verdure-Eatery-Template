@@ -36,9 +36,9 @@ export const metadata = {
     images: [restaurant.seo.ogImage],
   },
   // Uncomment and fill in restaurant.seo.googleVerification to verify with Search Console
-  // verification: {
-  //   google: restaurant.seo.googleVerification,
-  // },
+  verification: {
+    google: restaurant.seo.googleVerification,
+  },
   robots: {
     index: true,
     follow: true,
