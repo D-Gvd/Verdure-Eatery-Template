@@ -743,11 +743,17 @@ body{
 .items-start{
   align-items: flex-start;
 }
+.items-end{
+  align-items: flex-end;
+}
 .items-center{
   align-items: center;
 }
 .items-baseline{
   align-items: baseline;
+}
+.items-stretch{
+  align-items: stretch;
 }
 .justify-center{
   justify-content: center;
@@ -1075,53 +1081,42 @@ body{
 .prose-width {
     max-width: 65ch;
   }
-
 .last\:border-0:last-child{
   border-width: 0px;
 }
-
 .last\:pb-0:last-child{
   padding-bottom: 0px;
 }
-
 .hover\:border-on-primary:hover{
   --tw-border-opacity: 1;
   border-color: rgb(248 245 238 / var(--tw-border-opacity, 1));
 }
-
 .hover\:bg-accent\/90:hover{
   background-color: rgb(200 169 110 / 0.9);
 }
-
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 47 / var(--tw-bg-opacity, 1));
 }
-
 .hover\:text-accent:hover{
   --tw-text-opacity: 1;
   color: rgb(200 169 110 / var(--tw-text-opacity, 1));
 }
-
 .hover\:text-on-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(248 245 238 / var(--tw-text-opacity, 1));
 }
-
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(30 58 47 / var(--tw-text-opacity, 1));
 }
-
 .hover\:text-text-main:hover{
   --tw-text-opacity: 1;
   color: rgb(24 21 16 / var(--tw-text-opacity, 1));
 }
-
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
-
 @media (min-width: 640px){
 
   .sm\:flex-row{
@@ -1133,7 +1128,6 @@ body{
     padding-right: 3rem;
   }
 }
-
 @media (min-width: 768px){
 
   .md\:absolute{
@@ -1210,7 +1204,6 @@ body{
     padding-bottom: 8rem;
   }
 }
-
 @media (min-width: 1280px){
 
   .xl\:px-16{

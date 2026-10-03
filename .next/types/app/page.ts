@@ -1,4 +1,4 @@
-// File: /home/giod/Desktop/repos/eatery-template/app/page.js
+// File: /home/giod/Desktop/repos/Verdure-eatery-template/app/page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

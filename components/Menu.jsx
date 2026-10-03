@@ -5,8 +5,8 @@ import { restaurant } from "@/config/restaurant.config";
 
 function MenuItem({ item }) {
   return (
-    <div className="flex items-baseline justify-between gap-4 py-4 border-b border-border last:border-0">
-      <div className="flex-1 min-w-0">
+    <div className="flex items-stretch justify-between gap-4 py-4 border-b border-border last:border-0">
+      <div className="flex-1 min-w-0 flex flex-col justify-center">
         <div className="flex items-baseline gap-3 flex-wrap">
           <h3 className="font-sans font-medium text-text-main text-base">
             {item.name}
@@ -23,9 +23,24 @@ function MenuItem({ item }) {
           </p>
         )}
       </div>
-      <span className="text-text-main font-sans text-sm font-medium shrink-0 tabular-nums">
-        ${item.price}
-      </span>
+
+      {/* ── Price: single or sized ── */}
+      {item.sizes ? (
+        <div className="flex flex-col justify-center items-end gap-1 shrink-0">
+          {item.sizes.map((s) => (
+            <div key={s.label} className="flex items-baseline gap-2">
+              <span className="text-text-muted text-xs font-sans">{s.label}</span>
+              <span className="text-text-main font-sans text-sm font-medium tabular-nums">
+                ₱{s.price}
+              </span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <span className="flex items-center text-text-main font-sans text-sm font-medium shrink-0 tabular-nums">
+          ₱{item.price}
+        </span>
+      )}
     </div>
   );
 }
@@ -98,6 +113,17 @@ export default function Menu() {
             {activeCategory.items.map((item, i) => (
               <MenuItem key={i} item={item} />
             ))}
+
+          {activeCategory.Flavors && (
+            <div className="mt-2">
+              <p className="text-sm font-sans font-medium text-primary">
+                Available {activeCategory.Flavors.label}:
+              </p>
+              <p className="text-accent text-xs font-sans shrink-0">
+                {activeCategory.Flavors.available}
+              </p>
+            </div>
+          )}
           </div>
         </div>
 

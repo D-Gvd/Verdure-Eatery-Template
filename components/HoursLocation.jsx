@@ -30,8 +30,8 @@ export default function HoursLocation() {
                 key={row.day}
                 className="flex justify-between gap-6 pb-4 border-b border-on-primary/15 last:border-0"
               >
-                <dt className="text-on-primary/70 text-sm">{row.day}</dt>
-                <dd className="text-on-primary text-sm font-medium text-right">
+                <dt className="text-on-primary/70 text-xl">{row.day}</dt>
+                <dd className="text-on-primary text-xl font-medium text-right">
                   {row.times}
                 </dd>
               </div>
